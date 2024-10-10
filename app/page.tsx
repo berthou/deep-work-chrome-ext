@@ -1,9 +1,8 @@
 import Image from "next/image"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { ArrowRight, CheckCircle, Database, Flame, Focus, Layout, PencilRuler, RefreshCcw, Star, TrendingUp } from "lucide-react"
+import { Database, PencilRuler, RefreshCcw } from "lucide-react"
 
 export default function Home() {
   return (
