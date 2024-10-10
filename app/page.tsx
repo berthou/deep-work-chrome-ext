@@ -3,10 +3,18 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Database, PencilRuler, RefreshCcw } from "lucide-react"
+import { FormEvent } from 'react'
+import EmailForm from "@/components/EmailForm"
 
 export default function Home() {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    // Add your form submission logic here
+    console.log('Form submitted')
+  }
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-white"> {/* Changed this line */}
       <header className="container mx-auto px-4 py-8">
         <nav className="flex justify-between items-center">
           <div className="text-2xl font-bold text-gray-800">Deep Mode Init</div>
@@ -26,27 +34,19 @@ export default function Home() {
               </h1>
               <p className="text-xl text-gray-600 mb-8">
               This simple yet effective Chrome extension helps you focus and be productive.
-
 It will guide you in setting a consistent environment that works for you, not against you.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <form className="flex w-full max-w-sm items-center space-x-2">
-                  <Input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="flex-grow"
-                  />
-                  <Button type="submit">Get it for free</Button>
-                </form>
+                <EmailForm />
               </div>
             </div>
             <div className="md:w-1/2">
               <Image
                 src="/deepmode.png"
-                width={787}
-                height={716}
+                width={456}
+                height={441}
                 alt="Deep Mode Init Chrome Extension"
-                className="rounded-lg shadow-lg mx-auto"
+                className="rounded-lg mx-auto"
               />
             </div>
           </div>
@@ -61,17 +61,17 @@ It will guide you in setting a consistent environment that works for you, not ag
             <FeatureCard
               icon={<RefreshCcw className="h-10 w-10 text-blue-500" />}
               title="Consistent Environment"
-              description="Help you kickstart your work session that works for you"
+              description="Help you kickstart your work session that works for you. Everyday."
             />
             <FeatureCard
               icon={<PencilRuler className="h-10 w-10 text-green-500" />}
               title="Customizable"
-              description="Edit your checklist to fit your needs. Anytime"
+              description="Edit your checklist to fit your needs. Anytime."
             />
             <FeatureCard
               icon={<Database className="h-10 w-10 text-yellow-500" />}
               title="Saved automatically"
-              description="Your checklist is saved locally within your device."
+              description="Your checklist is saved automatically within your browsers."
             />
           </div>
         </section>
@@ -128,20 +128,11 @@ It will guide you in setting a consistent environment that works for you, not ag
         {/* Final CTA Section */}
         <section className="text-center py-20">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            Ready to Boost Your Productivity?
+            Ready for a productivity boost?
           </h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Join thousands of professionals who have transformed their work habits with FocusFlow.
-          </p>
+
           <div className="flex justify-center">
-          <form className="flex w-full max-w-sm items-center space-x-2">
-                  <Input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="flex-grow"
-                  />
-            <Button type="submit">Get it for free</Button>
-          </form>
+            <EmailForm />
           </div>
         </section>
       </main>
