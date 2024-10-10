@@ -1,17 +1,10 @@
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
 import { Database, PencilRuler, RefreshCcw } from "lucide-react"
 import { FormEvent } from 'react'
 import EmailForm from "@/components/EmailForm"
 
 export default function Home() {
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    // Add your form submission logic here
-    console.log('Form submitted')
-  }
 
   return (
     <div className="min-h-screen bg-white"> {/* Changed this line */}
