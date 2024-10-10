@@ -8,4 +8,4 @@ const nextConfig = {
   // basePath: '/your-repo-name',
 }
 
-export default nextConfig;
+export default nextConfig
