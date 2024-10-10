@@ -43,8 +43,8 @@ It will guide you in setting a consistent environment that works for you, not ag
             <div className="md:w-1/2">
               <Image
                 src="/deepmode.png"
-                width={400}
-                height={400}
+                width={787}
+                height={716}
                 alt="Deep Mode Init Chrome Extension"
                 className="rounded-lg shadow-lg mx-auto"
               />
