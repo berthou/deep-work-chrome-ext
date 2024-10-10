@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input"
 export default function EmailForm() {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    const apiUrl = 'https://66fd4b11e785e01fe380.appwrite.global/v1/functions/66fd4b1100010b8bc91b/executions?type=json';
+    const apiUrl = 'https://6707e9e69b6e15d7febc.appwrite.global//v1/functions/6707e9e500326ee54743/executions?type=json';
     const emailInput = e.currentTarget.querySelector('input[type="email"]') as HTMLInputElement;
     const email = emailInput.value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
