@@ -65,7 +65,7 @@ It will guide you in setting a consistent environment that works for you, not ag
             <FeatureCard
               icon={<Database className="h-10 w-10 text-yellow-500" />}
               title="Saved automatically"
-              description="Your checklist is saved automatically within your browsers."
+              description="Your checklist is saved automatically within your browser."
             />
           </div>
         </section>
@@ -78,19 +78,19 @@ It will guide you in setting a consistent environment that works for you, not ag
           <div className="max-w-3xl mx-auto">
             <ol className="space-y-6">
               <li className="flex items-center space-x-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                <div className="flex-shrink-0 w-8 h-8 bg-gray-800 text-white rounded-full flex items-center justify-center font-bold">1</div>
                 <p className="text-lg text-gray-700">Install the Deep Mode Init Chrome extension</p>
               </li>
               <li className="flex items-center space-x-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                <div className="flex-shrink-0 w-8 h-8 bg-gray-800 text-white rounded-full flex items-center justify-center font-bold">2</div>
                 <p className="text-lg text-gray-700">Edit the checklist to match your needs </p>
               </li>
               <li className="flex items-center space-x-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                <div className="flex-shrink-0 w-8 h-8 bg-gray-800 text-white rounded-full flex items-center justify-center font-bold">3</div>
                 <p className="text-lg text-gray-700">Go through the checklist when starting a new work session</p>
               </li>
               <li className="flex items-center space-x-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center font-bold">4</div>
+                <div className="flex-shrink-0 w-8 h-8 bg-gray-800 text-white rounded-full flex items-center justify-center font-bold">4</div>
                 <p className="text-lg text-gray-700">Enjoy a productive and satisfying work session</p>
               </li>
             </ol>
