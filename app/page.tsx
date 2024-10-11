@@ -1,8 +1,9 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Database, PencilRuler, RefreshCcw } from "lucide-react"
-import { FormEvent } from 'react'
-import EmailForm from "@/components/EmailForm"
+import Script from "next/script";
+// import { FormEvent } from 'react'
+// import EmailForm from "@/components/EmailForm"
 
 export default function Home() {
 
@@ -30,7 +31,7 @@ export default function Home() {
 It will guide you in setting a consistent environment that works for you, not against you.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <EmailForm />
+              <div id="script" dangerouslySetInnerHTML={{ __html: `<script src="https://eocampaign1.com/form/0f8dbf70-87ab-11ef-b612-65b645133dcf.js" data-form="0f8dbf70-87ab-11ef-b612-65b645133dcf"></script>` }} />
               </div>
             </div>
             <div className="md:w-1/2">
@@ -125,7 +126,8 @@ It will guide you in setting a consistent environment that works for you, not ag
           </h2>
 
           <div className="flex justify-center">
-            <EmailForm />
+            {/* <EmailForm /> */}
+            <div id="script" dangerouslySetInnerHTML={{ __html: `<script src="https://eocampaign1.com/form/0f8dbf70-87ab-11ef-b612-65b645133dcf.js" data-form="0f8dbf70-87ab-11ef-b612-65b645133dcf"></script>` }} />
           </div>
         </section>
       </main>
